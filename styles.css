@@ -1,0 +1,43 @@
+#drum-machine {
+    background-color: #f0f0f0;
+}
+
+.drum-machine-wrapper {
+    width: 450px;
+}
+
+.drum-pads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+.drum-pad {
+    font-size: 1.3em;
+    text-align: center;
+    user-select: none;
+    min-width: 80px;
+    min-height: 80px;
+    transition: background-color 0.15s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.drum-pad:active,
+.drum-pad:focus {
+    transform: scale(0.95);
+    outline: none !important;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5) !important; 
+}
+
+.btn-link {
+    background-color: #ff8a04!important; 
+    color: white !important; 
+    border-color: #ff8a04;
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+    background-color: #ff8a04 !important;
+    border-color: #ff8a04 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgb(255, 138, 4,0.5)!important;
+    text-decoration: none!important;
+}
